@@ -1,0 +1,32 @@
+création de base de donnée : pdo 
+
+CREATE TABLE manga (
+        id int UNSIGNED PRIMARY KEY AUTO_INCREMENT ,
+        title VARCHAR(150) NOT NULL, 
+        description TEXT,
+        prix DECIMAL(8,2)
+  
+    );
+
+CREATE TABLE user (
+        id int UNSIGNED PRIMARY KEY AUTO_INCREMENT ,
+        pseudo VARCHAR(150) NOT NULL, 
+        pseudo VARCHAR(150),
+        status BOOLEAN
+);
+
+INSERT INTO manga (title, description, prix) 
+    VALUES ('One Punch Man', 'One-Punch Man est un manga...', 7.99), ('GTO', 'Great Teacher Onisuka....', 6.99),
+    ('One Piece', 'One Piece est une série de shōnen mangas.....', 9.99);
+
+INSERT INTO user (pseudo, password, status)
+    VALUES ('John', '1234', 1), ('Max', '1234', 0); 
+
+
+
+    
+        
+
+  
+    
+
